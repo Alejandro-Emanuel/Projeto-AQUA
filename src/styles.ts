@@ -35,9 +35,6 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
   },
 
-  /* ==========================================================
-     ESTILOS DO NOVO CARD DE MONITORAMENTO (PROFISSIONAL)
-     ========================================================== */
   cardContainer: {
     flexDirection: 'row',
     backgroundColor: '#ffffff',
@@ -46,28 +43,27 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     gap: 16,
-    // Sombra para iOS
+
     shadowColor: '#0f172a',
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.05,
     shadowRadius: 12,
-    // Sombra para Android
     elevation: 3,
     marginVertical: 12,
   },
   containerImagem: {
-    flex: 4.5, // Controla a proporção do espaço para a imagem (esquerda)
+    flex: 4.5,
     alignItems: 'center',
     justifyContent: 'center',
   },
   caixaDaguaImg: {
     width: '100%',
-    aspectRatio: 1, // Torna a imagem perfeitamente quadrada e responsiva!
+    aspectRatio: 1,
     borderRadius: 12,
     backgroundColor: '#f1f5f9',
   },
   containerInformacoes: {
-    flex: 5.5, // Controla a proporção do espaço para as colunas (direita)
+    flex: 5.5, 
     flexDirection: 'column',
     gap: 12,
   },
@@ -77,12 +73,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   blocoLitros: {
-    backgroundColor: '#fef2f2', // Vermelho pastel premium
+    backgroundColor: '#fef2f2', 
     borderLeftWidth: 4,
     borderLeftColor: '#ef4444',
   },
   blocoVolume: {
-    backgroundColor: '#f0fdf4', // Verde pastel premium
+    backgroundColor: '#f0fdf4', 
     borderLeftWidth: 4,
     borderLeftColor: '#22c55e',
   },
