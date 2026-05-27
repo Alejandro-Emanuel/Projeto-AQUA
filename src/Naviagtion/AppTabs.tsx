@@ -1,20 +1,17 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { AtendimentosScreen } from '../screens/AtendimentosScreen';
 import { DashboardScreen } from '../screens/DashboardScreen';
 import { EstatisticasScreen } from '../screens/EstatisticasScreen';
 
 export type RootTabParamList = {
   Dashboard: undefined;
-  Atendimentos: undefined;
-  Relatorios: undefined;
+  Estatistica: undefined;
 };
 
 const Tab = createBottomTabNavigator<RootTabParamList>();
 
 function obterIcone(nomeRota: keyof RootTabParamList, focused: boolean) {
   if (nomeRota === 'Dashboard') return focused ? 'home' : 'home-outline';
-  if (nomeRota === 'Atendimentos') return focused ? 'list' : 'list-outline';
   return focused ? 'bar-chart' : 'bar-chart-outline';
 }
 
@@ -38,8 +35,7 @@ export function AppTabs() {
       })}
     >
       <Tab.Screen name="Dashboard" component={DashboardScreen} options={{ title: 'Painel' }} />
-      <Tab.Screen name="Atendimentos" component={AtendimentosScreen} options={{ title: 'Atendimentos' }} />
-      <Tab.Screen name="Relatorios" component={EstatisticasScreen} options={{ title: 'Estatisticas' }} />
+      <Tab.Screen name="Estatistica" component={EstatisticasScreen} options={{ title: 'Estatisticas' }} />
     </Tab.Navigator>
   );
 }
